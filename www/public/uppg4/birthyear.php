@@ -6,12 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-<form action="valueconverter.php" method= "post">
-    <label>Ange ett belopp i dollar</label>
-    <input type="text" name="currency">
+    <?php
+    $name = $_POST['name'];
+    $birthYear = $_POST['birthYear'];
+
+    $age = 2024 - $birthYear;
     
-    <input type="submit" value="Valutakonverterare">
-</form>
+    echo "<p>$name är $age år gammal</p>";
     
+    ?>
 </body>
 </html>
